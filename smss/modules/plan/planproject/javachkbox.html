@@ -1,0 +1,52 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<META http-equiv=Content-Type content="text/html; charset=utf-8">
+<meta name="generator" content="Namo WebEditor">
+<BODY leftMargin=0 topMargin=0>
+<script language="javascript">
+function Conf(Object) {
+if (confirm("ยืนยันต้องการบันทึก? \nDo you want to save?") == true){
+		callfrm("?option=plan&task=planproject/plan_addstd&vcode_proj=<?php echo $mvcode_proj;?>");  //page ประมวลผล
+}
+return false;
+}
+
+function CheckAll() {
+for (var i = 0; i < document.mylist.elements.length; i++)
+{
+var e = document.mylist.elements[i];
+if (e.name != "allchk")
+e.checked = document.mylist.allchk.checked;
+}
+}
+
+function CCA(CB,noHL) {
+if (!noHL) {
+	if (CB.checked)
+	 hL(CB);
+ else
+	 dL(CB);
+ }
+ }
+
+function hL(E) {
+while (E.tagName!="TR") {E=E.parentElement;}
+E.className="H";
+}
+
+function dL(E,S) {
+while (E.tagName!="TR") {E=E.parentElement;}
+if (typeof(S)!="undefined")
+E.className=S;
+else
+E.className=" ";
+}
+
+function callfrm(dest)
+	{
+		mylist.target = "_self"
+		mylist.action = dest
+		mylist.method = "POST"
+		mylist.submit()
+	}
+</script>
+</BODY></HTML>

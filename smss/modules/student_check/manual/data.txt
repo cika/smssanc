@@ -1,0 +1,1 @@
+<iframe src='./modules/<?php echo $_GET[option]."/manual/abouts.pdf";?>' border=0 width=100% align=center></iframe>

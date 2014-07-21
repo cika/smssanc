@@ -1,0 +1,1 @@
+<img src="./modules/<?php echo"$_GET[option]";?>/images/background.jpg" width="100%" />

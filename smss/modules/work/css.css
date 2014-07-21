@@ -1,0 +1,65 @@
+
+#JEDSADA
+/* แถวที่นักเรียนออก */
+table tr.out th,
+.out {
+    background: #FF2200;
+	font-weight:bold;
+	color:#FFF;
+}
+/* odd items 1,3,5,7,... */
+table tr.odd th,
+.odd {
+    background: #E5E5E5;
+}
+
+/* even items 2,4,6,8,... */
+table tr.even th,
+.even {
+    background: #D5D5D5;
+}
+
+/* odd table rows 1,3,5,7,... */
+table tr.odd th,
+table tr.odd,
+table tr.even th,
+table tr.even {
+    text-align:         left;
+}
+
+/* marked tbale rows */
+table tr.marked th,
+table tr.marked {
+    background:   #FFCC99;
+    color:   #000000;
+}
+
+/* hovered items */
+.odd:hover,
+.even:hover,
+.hover {
+    background: #CCFFCC;
+    color: #000000;
+}
+
+/* hovered table rows */
+table tr.odd:hover th,
+table tr.even:hover th,
+table tr.hover th {
+    background:   #CCFFCC;
+    color:   #000000;
+}
+input.button {
+cursor: pointer;
+}
+label {cursor: pointer;}
+input {cursor: pointer;}
+.C{color:   darkgreen;}
+.L{color:   RED;}
+.W{color:   #999966;}
+.S{color:   #CC33CC;}
+
+@media print{
+ #no_print{display:none;}
+ }
+#JEDSADA
